@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3086e7;
+}
+.container {
+    width: 500px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contador {
+    width: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.bt {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #712f26;
+    background-color: rgba(255, 114, 62, 0.911);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.bt:hover {
+    background-color: rgba(255, 146, 83, 0.938);
+}
+.bt:active {
+    background-color: rgba(255, 177, 132, 0.938);
+    box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(255, 255, 255, 0.8);  
+}
+.gira img {
+    width: 40px;
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 50%;
+}
+.girando img {
+    animation: rotate 0.4s linear;
+    
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(179deg);
+    }
+}
+
+.btTravado {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid lightslategray;
+    box-shadow: none;
+}
+.btTravado:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid lightslategray;
+}
+.btTravado:active {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid lightslategray;
+    box-shadow: none;
+}
