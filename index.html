@@ -17,6 +17,12 @@
         </div>
         <div id="reset" onclick="girar()" class="gira">
             <img src="https://cdn-icons-png.flaticon.com/512/1251/1251004.png?w=826" alt="reset">
+            <input type="range" id="quanti" min="0" max="100" oninput="quantidade()">
+            <div class="valorRange">
+                <span>0</span>
+                <span>100</span>
+            </div>
+            <div class="range"><h1 id="valorRange">0</h1></div>
         </div>
     </section>
 <script src="test.js"></script>
