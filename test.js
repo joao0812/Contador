@@ -2,11 +2,16 @@ const num = document.getElementById('num')
 const mais = document.getElementById('mais')
 const menos = document.getElementById('menos')
 const reset = document.getElementById('reset')
+const slider = document.getElementById('quanti')
+const valorRange = document.getElementById('valorRange')
+
+
 var sum = 0
+
 
 const soma = () => {
     num.textContent = ++sum
-    if (sum >= 10) {
+    if (sum >= slider.value) {
         travabt(mais)
     }
     if (sum >= 0){
@@ -18,7 +23,7 @@ const sub = () => {
     if (sum <= 0) {
         travabt(menos)
     }
-    if (sum <= 10){
+    if (sum <= slider.value){
         ativabt(mais)
     }
 }
@@ -43,6 +48,10 @@ const resetar = () => {
     sum = 0
     travabt(menos)
     ativabt(mais)
+}
+
+const quantidade = () => {
+    valorRange.textContent = slider.value
 }
 
 if (parseInt(num.textContent) == 0){
